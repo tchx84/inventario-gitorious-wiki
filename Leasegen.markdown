@@ -45,30 +45,30 @@ The current version of inventario-leasegen is targetted to be run on a Fedora 16
 
 Create /etc/yum.repos.d/inventario.repo with the following contents:
 
-[inventario]
-name=Inventario  
-baseurl=http://dev.laptop.org/~dsd/inventario-repo  
-enabled=1  
-gpgcheck=0
+    [inventario]
+    name=Inventario  
+    baseurl=http://dev.laptop.org/~dsd/inventario-repo  
+    enabled=1  
+    gpgcheck=0
 
 Install the package:
 
-# yum install inventario-leasegen
+    # yum install inventario-leasegen
 
 Adjust configuration as necessary:
 
-# cp /var/inventario-leasegen/etc/leasegen.conf{.example,}
-# nano /var/inventario-leasegen/etc/leasegen.conf
+    # cp /var/inventario-leasegen/etc/leasegen.conf{.example,}
+    # nano /var/inventario-leasegen/etc/leasegen.conf
 
 You will need to populate the required options and ensure that a writable path exists for the activation lease output.
 
 Now run the program for the first time:
 
-# inventario-leasegen
+    # inventario-leasegen
 
 Examine the output log to confirm that everything worked:
 
-# cat /var/inventaro-leasegen/var/leasegen.log
+    # cat /var/inventaro-leasegen/var/leasegen.log
 
 Finally, set up a crontab to run inventario-leasegen at regular intervals. leasegen will abort automatically if another instance is already running, so it is safe to run this at high frequency.
 
@@ -78,4 +78,4 @@ The log file can be found at /var/inventaro-leasegen/var/leasegen.log
 
 As noted above, leasegen will not re-generate leases if it thinks that the existing leases are new and match the current set of laptops that belong to the school. If you wish to force re-generation, remove the .checksum file that corresponds to the school in /var/inventario-leasegen/var/, or to force re-generation for all schools:
 
-# rm /var/inventario-leasegen/var/*.checksum
+    # rm /var/inventario-leasegen/var/*.checksum
