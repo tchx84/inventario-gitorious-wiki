@@ -28,7 +28,7 @@ inventario-leasegen only writes the generated leases to local storage; the chall
 3. Automatically transport the school-wide JSON file to the school server over the internet (using e.g. puppet) every time it is updated, and feed it into xs-activation: this will achieve a fully-hands-off inventario-driven lease generation system.
 4. Point oatslite to the one-file-per-laptop output in order to serve activation renewals over the internet before individual activations expire.
 
-== Prerequisites ==
+# Prerequisites
 
 An operational inventario installation is obviously required, and as the data source, inventario must have:
  1. Each and every laptop registered in its database, with the laptop UUIDs
@@ -41,7 +41,7 @@ OLPC's bios-crypto tools must be installed, compiled and available to the user t
 
 The current version of inventario-leasegen is targetted to be run on a Fedora 16 host.
 
-== Setup ==
+# Setup
 
 Create /etc/yum.repos.d/inventario.repo with the following contents:
 
@@ -72,7 +72,7 @@ Examine the output log to confirm that everything worked:
 
 Finally, set up a crontab to run inventario-leasegen at regular intervals. leasegen will abort automatically if another instance is already running, so it is safe to run this at high frequency.
 
-== Tips and tricks ==
+# Tips and tricks
 
 The log file can be found at /var/inventaro-leasegen/var/leasegen.log
 
