@@ -1,6 +1,6 @@
 inventario-leasegen is a program which interacts with inventario, querying information about the schools and automatically creating activations (leases) for the XOs in each school.
 
-== How it works ==
+# How it works
 
 inventario-leasegen logs into a dedicated user account in inventario and requests data.
 
