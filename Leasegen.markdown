@@ -13,9 +13,9 @@ The resultant list of laptops is filtered: only laptops in "activated" or "buen 
 Upon receiving the laptop lists and associated data, inventario-leasegen processes each laptop one-by-one, generating an activation lease. The resultant lease is stored twice: once in a one-file-per-school JSON format, and again in a split-out one-file-per-laptop flat file format.
 
 inventario-leasegen is intelligent: it will avoid redundantly regenerating activations for a school providing all the following conditions are met:
- 1. We have previously generated activations for this school, and
- 2. The list of laptops in this school has not changed since last time, and
- 3. The previously generated activations are sufficiently new (e.g. less than 1 week old).
+1. We have previously generated activations for this school, and
+2. The list of laptops in this school has not changed since last time, and
+3. The previously generated activations are sufficiently new (e.g. less than 1 week old).
 
 Point 3 is important: as activations have a limited lifespan, they must be periodically regenerated (so that the laptop leases are renewed) even when the school's laptop list has not changed.
 
@@ -31,9 +31,9 @@ inventario-leasegen only writes the generated leases to local storage; the chall
 # Prerequisites
 
 An operational inventario installation is obviously required, and as the data source, inventario must have:
- 1. Each and every laptop registered in its database, with the laptop UUIDs
- 2. Assignations or movements specifying the collections of laptops that are in each school
- 3. School servers and activation durations registered for each school (see Technical support -> School servers -> List school servers)
+1. Each and every laptop registered in its database, with the laptop UUIDs
+2. Assignations or movements specifying the collections of laptops that are in each school
+3. School servers and activation durations registered for each school (see Technical support -> School servers -> List school servers)
 
 A custom person and user must be created in inventario. This is similar to any administrative inventario account, but the person should have the role "extern system" under the root place, and a good password should be chosen for the corresponding user account.
 
