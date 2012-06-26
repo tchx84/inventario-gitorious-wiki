@@ -16,6 +16,12 @@ Inventario was orignally developed within ParaguayEduca, and the ParaguayEduca w
 * Client-side: uses Qooxdoo javascript-based UI, works in all major browsers
 * Server-side: Ruby on Rails, MySQL, intended for use on Fedora Linux
 
+# Server requirements
+
+Fedora Linux is the target platform; the installation documentation and packages are specifically targetted at Fedora. The software should also work fine on other distributions, but with non-Fedora setups you will be on your own in terms of installation, configuration and support.
+
+The software has been developed against Ruby 1.9 and Rails 3.0, intended for use on Fedora 17.
+
 # Installation
 
 See [[Installation]]
