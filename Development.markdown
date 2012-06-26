@@ -8,9 +8,9 @@ Use the latest version. Extract it, rename the directory to `qooxdoo-sdk`, and p
 
 # Compile the GUI
 
-The first time you configure your development environment, and every time you change the code inside `gui`, you need to recompile and reinstall the GUI. 
+The first time you configure your development environment, and every time you change the set of classes inside `gui` (e.g. adding or removing a class, using a new part of Qooxdoo that was previously unused), you need to recompile and reinstall the GUI. 
 
-    # rake gui:generate[source]
+    # rake gui:generate
 
 # Initialise database
 
@@ -82,7 +82,7 @@ Here are some useful links for working with ActiveRecord:
 # Tips and tricks
 
 * When you change something inside app/, there's no need to restart the session nor the rails server. Your changes take effect immediately.
-* When you change something in public/gui/, you have to stop the server, **clean your browser cache** (important!), recompile and reinstall the GUI.
+* The system may feel slow to load and slow to use in your development environment. When you package it for installation on a real system, the final product is much much faster.
 
 # Packaging
 
