@@ -2,7 +2,7 @@ This page documents various procedures that are needed for inventario developmen
 
 # Install qooxdoo
 
-To compile the GUI, you must [download the Qooxdoo SDK](http://qooxdoo.org/download)
+To compile the GUI, you must [download the Qooxdoo Desktop SDK](http://qooxdoo.org/download)
 
 Use the latest version. Extract it, rename the directory to `qooxdoo-sdk`, and place it within the `public` directory within the inventario git checkout.
 
