@@ -10,7 +10,7 @@ Use the latest version. Extract it, rename the directory to `qooxdoo-sdk`, and p
 
 The first time you configure your development environment, and every time you change the code inside `gui`, you need to recompile and reinstall the GUI. 
 
- # rake gui:generate[source]
+    # rake gui:generate[source]
 
 # Initialise database
 
