@@ -18,17 +18,17 @@ The first time you develop, you need to configure the MySQL server. In the `conf
 
 To initialize or reset the database:
 
- # mysql -u root -e 'drop database if exists inventario; create database inventario;'
- # rake seed_data:install
- # rake db:migrate
- # rake seed_data:setup
- # rake seed_data:fix
+    # mysql -u root -e 'drop database if exists inventario; create database inventario;'
+    # rake seed_data:install
+    # rake db:migrate
+    # rake seed_data:setup
+    # rake seed_data:fix
 
 # Execute local test server
 
 You can run a HTTP server directly from the codebase, viewing the requests and errors in your terminal, without having to configure a webserver.
 
- # rails server
+    # rails server
 
 Now you can navigate to http://127.0.0.1:3000
 
@@ -40,12 +40,12 @@ This page explains it well: [http://weblog.jamisbuck.org/2005/9/27/getting-start
 
 For example:
 
- # rails generate migration MiNuevaMigracion
+    # rails generate migration MiNuevaMigracion
 
 Now you have a new file in `db/migrations` and you can write code to make the change. Use the existing migrations as examples. Then:
 
- # git add db/migrations/NEWFILE
- # rake db:migrate
+    # git add db/migrations/NEWFILE
+    # rake db:migrate
 
 # Update translations
 
@@ -53,13 +53,13 @@ The code and strings should be written in English. We use gettext to translate t
 
 To update the translations:
 
- rake translations:update_pofiles
+    # rake translations:update_pofiles
 
 Now you can update `translation/po/es/inventario.mo`
 
 Then, compile the `.mo` files:
 
- rake translations:update_mofiles
+    # rake translations:update_mofiles
 
 Finally, create a git commit with the updates.
 
@@ -90,17 +90,17 @@ Place the qooxdoo SDK in `/usr/share/qooxdoo-sdk`
 
 Configure your system for RPM building:
 
-  # yum install rpmdevtools yum-utils fedora-packager 
-  # rpmdev-setuptree
+    # yum install rpmdevtools yum-utils fedora-packager 
+    # rpmdev-setuptree
 
 In your development environment, commit your changes.
 
 Generate a tarball with a version number matching the one listed in `packaging/inventario.spec`. For example:
 
-  # git archive --format=tar --prefix inventario-0.3/ HEAD | gzip > ~/rpmbuild/SOURCES/inventario-0.3.tar.gz
+    # git archive --format=tar --prefix inventario-0.3/ HEAD | gzip > ~/rpmbuild/SOURCES/inventario-0.3.tar.gz
 
 Build an RPM package:
 
-   # rpmbuild -bb packaging/inventario.spec
+    # rpmbuild -bb packaging/inventario.spec
 
 The output RPMs will be saved in ~/rpmbuild/RPMS/
