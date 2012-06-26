@@ -2,7 +2,7 @@ This page documents various procedures that are needed for inventario developmen
 
 # Install qooxdoo
 
-To compile the GUI, you must download the Qooxdoo SDK from http://qooxdoo.org/download
+To compile the GUI, you must [download the Qooxdoo SDK](http://qooxdoo.org/download)
 
 Use the latest version. Extract it, rename the directory to `qooxdoo-sdk`, and place it within the `public` directory within the inventario git checkout.
 
@@ -30,13 +30,13 @@ You can run a HTTP server directly from the codebase, viewing the requests and e
 
     # rails server
 
-Now you can navigate to http://127.0.0.1:3000
+Now you can navigate to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 # Database changes
 
 During development, if you want to make a change to the database structure (e.g. add a new table, change some columns), you have to use Rails' migration system. This builds a change history of the modifications we make to the database structure.
 
-This page explains it well: [http://weblog.jamisbuck.org/2005/9/27/getting-started-with-activerecord-migrations]
+[This page]([http://weblog.jamisbuck.org/2005/9/27/getting-started-with-activerecord-migrations) explains it well.
 
 For example:
 
@@ -67,8 +67,8 @@ Finally, create a git commit with the updates.
 
 Here are some useful links for working with ActiveRecord:
 
-* [http://api.rubyonrails.org/files/activerecord/README.html]
-* [http://api.rubyonrails.org/classes/ActiveRecord/Base.html]
+* [ActiveRecord README](http://api.rubyonrails.org/files/activerecord/README.html)
+* [ActiveRecord Base class](http://api.rubyonrails.org/classes/ActiveRecord/Base.html)
 
 # Working with Qooxdoo
 
