@@ -53,13 +53,13 @@ The code and strings should be written in English. We use gettext to translate t
 
 To update the translations:
 
-    # rake translations:update_pofiles
+    # rake gettext:find
 
 Now you can update `translation/po/es/inventario.mo`
 
 Then, compile the `.mo` files:
 
-    # rake translations:update_mofiles
+    # rake gettext:pack
 
 The GUI has its own translations. Generate the .mo files with:
 
