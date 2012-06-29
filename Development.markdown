@@ -61,6 +61,12 @@ Then, compile the `.mo` files:
 
     # rake translations:update_mofiles
 
+The GUI has its own translations. Generate the .mo files with:
+
+    # rake gui:generate[translation]
+
+Now you can update `public/gui/source/translation/es.po`. There is no need to create a .mo file afterwards.
+
 Finally, create a git commit with the updates.
 
 # Working with ActiveRecord
