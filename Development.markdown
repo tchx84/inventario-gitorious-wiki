@@ -57,17 +57,13 @@ To update the translations:
 
 Now you can update `translation/po/es/inventario.mo`
 
-Then, compile the `.mo` files:
-
-    # rake gettext:pack
-
 The GUI has its own translations. Generate the .mo files with:
 
     # rake gui:generate[translation]
 
-Now you can update `public/gui/source/translation/es.po`. There is no need to create a .mo file afterwards.
+Now you can update `public/gui/source/translation/es.po`.
 
-Finally, create a git commit with the updates.
+In both cases, there is no need to compile the `.po` files into the `.mo` format. Finally, create a git commit with the updates.
 
 # Working with ActiveRecord
 
