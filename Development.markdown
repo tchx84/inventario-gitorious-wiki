@@ -36,7 +36,7 @@ Now you can navigate to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 During development, if you want to make a change to the database structure (e.g. add a new table, change some columns), you have to use Rails' migration system. This builds a change history of the modifications we make to the database structure.
 
-[This page]([http://weblog.jamisbuck.org/2005/9/27/getting-started-with-activerecord-migrations) explains it well.
+[This page](http://weblog.jamisbuck.org/2005/9/27/getting-started-with-activerecord-migrations) explains it well.
 
 For example:
 
