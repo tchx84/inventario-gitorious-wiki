@@ -19,7 +19,7 @@ The inventario installation expects the `root` mysql user to have no password (y
 
 Install Passenger (this is not packaged in Fedora, so the installation is a bit long winded)
 
-    # yum install ruby-devel httpd-devel apr-devel gcc gcc-c++ make
+    # yum install ruby-devel httpd-devel apr-devel gcc gcc-c++ make curl-devel openssl-devel zlib-devel
     # gem install passenger
     # passenger-install-apache2-module
 
