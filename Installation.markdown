@@ -2,7 +2,7 @@ Create `/etc/yum.repos.d/yaas.repo` with the following contents:
 
     [inventario]
     name=Inventario
-    baseurl=http://dev.laptop.org/~dsd/inventario-repo/f16
+    baseurl=http://dev.laptop.org/~dsd/inventario-repo/f17
     enabled=1
     gpgcheck=0
 
@@ -32,7 +32,7 @@ Add the following to `/etc/httpd/conf.d/passenger.conf`
 
 If using SELinux, enable apache to run in permissive mode
 
- semanage permissive -a httpd_t
+    # semanage permissive -a httpd_t
 
 >This command enables apache to run in "permissive" mode, meaning that your whole apache installation ignores all policies normally enforced by SELinux. I tried, and ran out of patience before being able to produce a leaner way to get passenger and SELinux working together without error.
 
