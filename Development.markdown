@@ -97,12 +97,8 @@ Configure your system for RPM building:
 
 In your development environment, commit your changes.
 
-Generate a tarball with a version number matching the one listed in `packaging/inventario.spec`. For example:
-
-    # git archive --format=tar --prefix inventario-0.3/ HEAD | gzip > ~/rpmbuild/SOURCES/inventario-0.3.tar.gz
-
 Build an RPM package:
 
-    # rpmbuild -bb packaging/inventario.spec
+    # rake packaging:buildrpm
 
 The output RPMs will be saved in ~/rpmbuild/RPMS/
