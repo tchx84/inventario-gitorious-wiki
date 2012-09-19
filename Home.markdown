@@ -24,7 +24,7 @@ The software has been developed against Ruby 1.9 and Rails 3.0, intended for use
 
 # Installation
 
-See [[Installation]]
+See [[Installation]] and [[UpgradeNotes]]
 
 # Documentation
 
