@@ -55,7 +55,7 @@ To update the translations:
 
     # rake gettext:find
 
-Now you can update `translation/po/es/inventario.mo`
+Now you can update `translation/locale/es/inventario.po`
 
 The GUI has its own translations. Generate the .mo files with:
 
