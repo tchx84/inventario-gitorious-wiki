@@ -65,6 +65,26 @@ Now you can update `public/gui/source/translation/es.po`.
 
 In both cases, there is no need to compile the `.po` files into the `.mo` format. Finally, create a git commit with the updates.
 
+# Unit tests
+
+* [A Guide to Testing Rails Applications](http://guides.rubyonrails.org/testing.html)
+
+Seed data is not used here, instead we put the very bare-bones seed data in fixtures. Note that seed data for tests is generally regarded as bad practice - each test should explicitly create the minimal data that it needs.
+
+Run an individual test file or method:
+
+    # ruby -Itest test/unit/post_test.rb
+    # ruby -Itest test/unit/post_test.rb -n test_the_truth
+
+Or specific categories of tests:
+
+    # rake test:units
+    # rake test:integration
+
+Or all tests:
+
+    # rake test
+
 # Working with ActiveRecord
 
 Here are some useful links for working with ActiveRecord:
