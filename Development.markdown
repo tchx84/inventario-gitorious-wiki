@@ -73,6 +73,7 @@ Seed data is not used here, instead we put the very bare-bones seed data in fixt
 
 Run an individual test file or method:
 
+    # rake db:test:prepare
     # ruby -Itest test/unit/post_test.rb
     # ruby -Itest test/unit/post_test.rb -n test_the_truth
 
