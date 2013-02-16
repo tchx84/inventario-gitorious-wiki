@@ -2,7 +2,7 @@ Create `/etc/yum.repos.d/inventario.repo` with the following contents:
 
     [inventario]
     name=Inventario
-    baseurl=http://dev.laptop.org/~dsd/inventario-repo/$releasever
+    baseurl=http://dev.laptop.org/~dsd/inventario-repo/f$releasever
     enabled=1
     gpgcheck=0
 
