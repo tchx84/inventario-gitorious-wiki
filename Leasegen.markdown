@@ -41,7 +41,7 @@ A custom person and user must be created in inventario. This is similar to any a
 
 OLPC's bios-crypto tools must be installed, compiled and available to the user that runs inventario-leasegen. Similarly, the keypair (including private key) needed to create and verify leases must be available.
 
-The current version of inventario-leasegen is targetted to be run on a Fedora 16 host.
+The current version of inventario-leasegen is targetted to be run on a Fedora 18 host.
 
 # Setup
 
