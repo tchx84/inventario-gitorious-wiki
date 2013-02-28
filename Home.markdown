@@ -28,6 +28,8 @@ See [[Installation]] and [[UpgradeNotes]]
 
 # Documentation
 
+* Managing laptop [[SoftwareVersions]]
+
 Somewhat outdated/incomplete manuals:
 
 * [English manual](http://wiki.paraguayeduca.org/index.php/Inventario_manual/en)
