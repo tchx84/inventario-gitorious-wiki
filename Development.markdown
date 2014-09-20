@@ -18,11 +18,8 @@ The first time you develop, you need to configure the MySQL server. In the `conf
 
 To initialize or reset the database:
 
-    # mysql -u root -e 'drop database if exists inventario; create database inventario character set utf8mb4;'
-    # rake seed_data:install
-    # rake db:migrate
-    # rake seed_data:setup
-    # rake seed_data:fix
+    # rake db:drop
+    # rake db:setup
 
 # Execute local test server
 
